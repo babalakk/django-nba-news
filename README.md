@@ -1,1 +1,1 @@
-django-nba-news
+# django-nba-news
