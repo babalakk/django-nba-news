@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/nba-news/image', '.']
+  timeout: 600s
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/nba-news/image']
