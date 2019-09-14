@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  django-nba-news:
+    image: django-nba-news
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+        - 8000:8000
