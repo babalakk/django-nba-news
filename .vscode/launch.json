@@ -38,7 +38,7 @@
             "name": "Python: Django",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/manage.py",
+            "program": "${workspaceFolder}/code/manage.py",
             "args": [
                 "runserver",
                 "--noreload",
