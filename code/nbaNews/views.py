@@ -9,7 +9,7 @@ from .serializers import ArticleSerializer
 
 class ArticleViewset(viewsets.ModelViewSet):
     queryset = Articles.objects.all()
-    serial_class = ArticleSerializer
+    serializer_class = ArticleSerializer
 
 def index(request):
     return HttpResponse("This is Index")
