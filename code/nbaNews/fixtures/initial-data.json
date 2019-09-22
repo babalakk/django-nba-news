@@ -1,0 +1,13 @@
+[
+    {
+      "model": "nbaNews.Articles",
+      "pk": 1,
+      "fields": {
+        "title": "Test Article",
+        "content": "This is test content for test article.",
+        "image_url":"https://images.pexels.com/photos/159291/beer-machine-alcohol-brewery-159291.jpeg?cs=srgb&dl=alcohol-ale-bar-159291.jpg&fm=jpg",
+        "source_url":"",
+        "publish_time":"2019-09-22 10:23:50"
+      }
+    }
+  ]
