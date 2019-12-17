@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-nba
+spec:
+  selector:
+      app: nba
+  ports:
+    - name: http
+      port: 8888
+      targetPort: 8000
+      protocol: TCP
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nba
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nba
+  template:
+    metadata:
+      labels:
+        app: nba
+    spec:
+      containers:
+      - name: nba
+        image: django-nba-news:latest
+        imagePullPolicy: IfNotPresent
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "300m"
+        ports:
+        - containerPort: 8000

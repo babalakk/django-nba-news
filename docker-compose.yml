@@ -1,8 +1,8 @@
 version: '2.1'
 
 services:
-  django-nba-news:
+  web:
     image: django-nba-news
     build: .
     ports:
-      - 8000:8000
+      - 8888:8000

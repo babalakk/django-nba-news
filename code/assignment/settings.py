@@ -25,10 +25,7 @@ SECRET_KEY = '0j8#d1)1*-v6=$=92&&ea3%=1diszrqkna-s=41ep3s9&a83ak'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '172.104.100.239',
-    'localhost',
-]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -137,3 +134,4 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
 }
+
